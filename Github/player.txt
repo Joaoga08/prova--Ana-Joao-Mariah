@@ -6,23 +6,31 @@ public class Player : MonoBehaviour
 {
     [SerializeField] Rigidbody2D player;
 
-    
 
-  
-   
+
+
+
 
     // Update is called once per frame
     void Update()
     {
-      if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            player.velocity = new Vector2(-3, 0);
+            player.velocity = new Vector2(2, 0);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
-            
+
         {
-            player.velocity = new Vector2(-3,0);
+            player.velocity = new Vector2(-2, 0);
         }
-       
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+
+            player.velocity = new Vector2(0, 2);
+
+        }
+
     }
 }
+
